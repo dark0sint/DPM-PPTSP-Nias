@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>#(title)</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>DPM-PPTSP Kabupaten Nias</h1>
+            <nav>
+                <a href="/">Beranda</a>
+                <a href="/layanan" class="active">Layanan</a>
+                <a href="/contact">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Informasi & Layanan Publik</h2>
+
+        #if(success):
+        <div class="alert">
+            Terima kasih! Data berhasil dikirimkan.
+        </div>
+        #endif
+
+        <div class="news
