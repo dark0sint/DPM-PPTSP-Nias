@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#(title)</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .contact-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0056b3;
+        }
+        .contact-card h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>DPM-PPTSP Kabupaten Nias</h1>
+            <nav>
+                <a href="/">Beranda</a>
+                <a href="/layanan">Layanan</a>
+                <a href="/contact" class="active">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Hubungi Kami</h2>
+        <p>
+            Anda dapat menghubungi kami melalui kontak di bawah ini. 
+            Kami siap melayani Anda pada hari Senin - Jumat ( Kecuali hari libur )
+            pukul 08.00 WIB - 16.00 WIB.
+        </p>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Alamat Kantor</h3>
+                <p>
+                    Jalan Arah Palmerah No. 123<br>
+                    Kota Gunungsitoli<br>
+                    Kabupaten Nias, Sumatera Utara 22811
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Telepon & Fax</h3>
+                <p>
+                    Telepon: (0639) 123-4567<br>
+                    Fax: (0639) 123-4568<br>
+                    Email: dpm.pptsp@nias.go.id
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Layanan Online</h3>
+                <p>
+                    Website: www.dpm-pptsp.nias.go.id<br>
+                    Pengaduan: pengaduan@dpm-pptsp.nias.go.id<br>
+                    Jam Layanan: 08.00 - 16.00 WIB
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Peta Lokasi</h3>
+                <p>
+                    Lokasi Kantor:<br>
+                    <a href="#" onclick="alert('Peta akan ditampilkan di sini')">Lihat Peta</a>
+                </p>
+            </div>
+        </div>
+
+        <hr style="margin: 40px 0;">
+
+        <h3>Kirim Pesan Langsung</h3>
+        <form action="/submit-pengaduan" method="POST" class="form-container">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="title" required placeholder="Masukkan nama Anda">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="email@anda.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subjek:</label>
+                <select id="subject" name="category">
+                    <option value="Pengaduan">Pengaduan</option>
+                    <option value="Saran">Saran</option>
+                    <option value="Informasi">Informasi</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="content" rows="6" required placeholder="Tuliskan pesan Anda..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 DPM-PPTSP Kabupaten Nias. All rights reserved.</p>
+            <p>Dikembangkan oleh Tim IT DPM-PPTSP Nias</p>
+        </div>
+    </footer>
+
+</body>
+</html>
