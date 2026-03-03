@@ -1,0 +1,22 @@
+# Swift Package Manager
+Packages
+.build
+*.xcodeproj
+xcuserdata
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Vapor
+.env
+.env.* 
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
