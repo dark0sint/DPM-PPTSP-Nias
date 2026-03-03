@@ -28,3 +28,46 @@
         #endif
 
         <div class="news
+        #for(info in infos):
+        <div class="news-item">
+            <span class="category">#(info.category)</span>
+            <h3>#(info.title)</h3>
+            <p>#(info.content)</p>
+            <small>Diposting pada: #(info.createdAt)</small>
+        </div>
+        #endfor
+
+        <hr>
+        
+        <h3>Formulir Pengaduan / Saran</h3>
+        <form action="/submit-pengaduan" method="POST" class="form-container">
+            <div class="form-group">
+                <label for="title">Judul:</label>
+                <input type="text" id="title" name="title" required placeholder="Masukkan judul pengaduan">
+            </div>
+            
+            <div class="form-group">
+                <label for="category">Kategori:</label>
+                <select id="category" name="category">
+                    <option value="Pengaduan">Pengaduan</option>
+                    <option value="Saran">Saran</option>
+                    <option value="Lowongan">Lowongan Kerja</option>
+                    <option value="Pelatihan">Pelatihan</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="content">Isi Pesan:</label>
+                <textarea id="content" name="content" rows="5" required placeholder="Tuliskan keluhan atau saran Anda..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 DPM-PPTSP Kabupaten Nias. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
