@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#(title)</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* Inline CSS tambahan untukHero Section */
+        .hero {
+            background-color: #0056b3;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>DPM-PPTSP Kabupaten Nias</h1>
+            <nav>
+                <a href="/">Beranda</a>
+                <a href="/layanan">Layanan</a>
+                <a href="/contact">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>#(sambutan)</h1>
+            <p>#(deskripsi)</p>
+            <br>
+            <a href="/layanan" class="btn">Lihat Layanan</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2>Tentang Kami</h2>
+        <p>
+            DPM-PPTSP (Dinas Pemberdayaan Masyarakat dan Pelatihan Kerja Perlindungan Tenaga Kerja) 
+            memiliki tugas melaksanakan pemberdayaan masyarakat, pelatihan kerja, dan perlindungan 
+            tenaga kerja sesuai dengan ketentuan peraturan perundang-undangan.
+        </p>
+        
+        <div class="grid-layanan">
+            <div class="card">
+                <h3>Pemberdayaan Masyarakat</h3>
+                <p>Meningkatkan kapasitas masyarakat di Kabupaten Nias dalam aspek ekonomi dan sosial.</p>
+            </div>
+            <div class="card">
+                <h3>Pelatihan Kerja</h3>
+                <p>Menyediakan program pelatihan skill agar masyarakat siap bekerja.</p>
+            </div>
+            <div class="card">
+                <h3>Perlindungan TK</h3>
+                <p>Menjaga hak-hak tenaga kerja agar terjadi hubungan industrial yang sehat.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 DPM-PPTSP Kabupaten Nias. All rights reserved.</p>
+        <p>Jl. Arah Palmerah, Gunungsitoli, Sumatera Utara</p>
+    </footer>
+
+</body>
+</html>
